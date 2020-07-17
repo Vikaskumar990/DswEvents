@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/text_gallery"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#23283b"
+    android:fadeScrollbars="true"
+    android:isScrollContainer="true"
+    tools:context=".UpdateActivity">
+
+
+    <TextView
+      android:id="@+id/textView22"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="1dp"
+      android:background="#ffffff"
+      android:text="22/10/2019"
+      app:layout_constraintBottom_toTopOf="@+id/textView25"
+      app:layout_constraintEnd_toStartOf="@+id/textView21"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toEndOf="@+id/textView20"
+      app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+      android:id="@+id/textView11"
+      android:layout_width="210dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="1dp"
+      android:layout_marginTop="10dp"
+      android:background="#ffffff"
+      android:padding="15dp"
+      android:text="Event Timing"
+      android:textAlignment="center"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/textView10"
+      app:layout_constraintTop_toBottomOf="@+id/etEventName" />
+
+    <EditText
+      android:id="@+id/tvMemberCount"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:background="#ffffff"
+      android:inputType="number"
+      android:padding="15dp"
+      android:text="7202052104"
+      android:textAlignment="center"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toEndOf="@+id/textView16"
+      app:layout_constraintTop_toBottomOf="@+id/etEventDes" />
+
+    <EditText
+      android:id="@+id/textView19"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:background="#ffffff"
+      android:inputType="number"
+      android:padding="15dp"
+      android:text="theUnderGroundPoets@gmail.com"
+      android:textAlignment="center"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/textView17"
+      app:layout_constraintTop_toBottomOf="@+id/tvMemberCount" />
+
+    <TextView
+      android:id="@+id/etEventDes"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="10dp"
+      android:background="#ffffff"
+      android:padding="10dp"
+      android:text="this is to inform all the students of class that SPADE under the aegis of Division of student welfare is organising Campus princess - Road to Miss India. You all are requested to show your valuable presence in S.S.D.M.A. .  LET'S together make this event a big success . Gather as much as crowd. All of us are counting on you guys.. Get all your friends and their friends on the show today. "
+      android:textAlignment="viewStart"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/tvMemberCount"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+      android:id="@+id/textView15"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:background="#ffffff"
+      android:padding="10dp"
+      android:text="DESCRIPTION"
+      android:textAlignment="viewStart"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toTopOf="@+id/etEventDes"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+    <TextView
+      android:id="@+id/textView9"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#FFFFFF"
+      android:inputType="text"
+      android:padding="10dp"
+      android:text="AAGHAAZ (event name)"
+      android:textAlignment="viewStart"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <TextView
+      android:id="@+id/textView10"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="1dp"
+      android:background="#ffffff"
+      android:padding="15dp"
+      android:text="Event Date"
+      android:textAlignment="center"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toStartOf="@+id/textView11"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etEventName" />
+
+    <TextView
+      android:id="@+id/textView16"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:background="#ffffff"
+      android:padding="15dp"
+      android:text="Contact Number :"
+      android:textAlignment="center"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toStartOf="@+id/tvMemberCount"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etEventDes" />
+
+    <TextView
+      android:id="@+id/textView17"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:background="#ffffff"
+      android:padding="15dp"
+      android:text="Email Id : "
+      android:textAlignment="center"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <TextView
+      android:id="@+id/etEventName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#FFFFFF"
+      android:paddingLeft="10dp"
+      android:inputType="text"
+      android:text="The UnderGround Poets( org name)"
+      android:textAlignment="viewStart"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+      android:id="@+id/imageView4"
+      android:layout_width="wrap_content"
+      android:layout_height="240dp"
+      app:layout_constraintBottom_toTopOf="@+id/textView9"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"/>
+<!--      app:srcCompat="@drawable/aaghaaz" />-->
+
+    <TextView
+      android:id="@+id/textView20"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:background="#ffffff"
+      android:paddingLeft="10dp"
+      android:text="Start Date : "
+      app:layout_constraintBottom_toTopOf="@+id/textView24"
+      app:layout_constraintEnd_toStartOf="@+id/textView22"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+      android:id="@+id/textView21"
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="1dp"
+      android:background="#ffffff"
+      android:paddingLeft="10dp"
+      android:text="Starting Time : "
+      app:layout_constraintBottom_toTopOf="@+id/textView26"
+      app:layout_constraintEnd_toStartOf="@+id/textView23"
+      app:layout_constraintStart_toEndOf="@+id/textView22"
+      app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+      android:id="@+id/textView23"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="#ffffff"
+      android:text="11:30 AM"
+      app:layout_constraintBottom_toTopOf="@+id/textView27"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/textView21"
+      app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+      android:id="@+id/textView24"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:background="#ffffff"
+      android:text="End Date : "
+      android:paddingLeft="10dp"
+      app:layout_constraintEnd_toStartOf="@+id/textView25"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+    <TextView
+      android:id="@+id/textView25"
+      android:layout_width="100dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="1dp"
+      android:background="#ffffff"
+      android:text="24/10/2019"
+      app:layout_constraintEnd_toStartOf="@+id/textView26"
+      app:layout_constraintStart_toEndOf="@+id/textView24"
+      app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+    <TextView
+      android:id="@+id/textView26"
+      android:layout_width="130dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="1dp"
+      android:background="#ffffff"
+      android:paddingLeft="10dp"
+      android:text="Ending Time"
+      app:layout_constraintEnd_toStartOf="@+id/textView27"
+      app:layout_constraintStart_toEndOf="@+id/textView25"
+      app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+      android:id="@+id/textView27"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:background="#ffffff"
+      android:text="05:00 PM"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/textView26"
+      app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

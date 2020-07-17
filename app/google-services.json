@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1027500103509",
+    "firebase_url": "https://dswevents-7b75d.firebaseio.com",
+    "project_id": "dswevents-7b75d",
+    "storage_bucket": "dswevents-7b75d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027500103509:android:34d8314c2f636432ae01dc",
+        "android_client_info": {
+          "package_name": "com.sodhotuition.dswevents"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027500103509-e2j658kh3u0mcge7fn4vto7k8smsd5od.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sodhotuition.dswevents",
+            "certificate_hash": "216c5e9bfd43cb793943a494dbf5879724c1d514"
+          }
+        },
+        {
+          "client_id": "1027500103509-thnoqro34fhaan8jdlntqjica5al1tbi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAkDDaHIA2mBS6PkqcGrh_4IDqOXAkXgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027500103509-thnoqro34fhaan8jdlntqjica5al1tbi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

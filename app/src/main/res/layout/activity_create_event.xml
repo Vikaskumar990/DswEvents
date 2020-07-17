@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreateEventForm">
+
+  <ScrollView
+      android:id="@+id/text_tools"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+      <!--TextView
+          android:id="@+id/textView"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Create New Event"
+          android:textAlignment="center"
+          android:textColor="@android:color/black"
+          android:textSize="24sp"
+          android:textStyle="bold|italic" /-->
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+          android:fontFamily="sans-serif"
+          android:text="Event Name"
+          android:textSize="18sp" />
+
+      <EditText
+          android:id="@+id/txtename"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+
+          android:ems="10"
+          android:inputType="textPersonName"
+          android:singleLine="true"
+          android:textSize="18dp" />
+
+      <TableRow
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/upload_event_banner"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonUpload"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/upload" />
+      </TableRow>
+
+      <RelativeLayout
+          android:layout_width="100dp"
+          android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/ivUploadImage"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/blank_img" />
+
+        <Button
+            android:id="@+id/btRemoveImage"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_close"
+            android:visibility="gone"/>
+      </RelativeLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:text="Event Starting Date "
+          android:textSize="18sp" />
+
+      <TextView
+          android:id="@+id/textViewStartDate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="@string/mm_dd_yyyy"
+          android:background="?attr/editTextBackground"
+          android:inputType="date"
+          android:clickable="true"
+          android:focusable="true"
+          android:editable="false"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Event Ending Date "
+          android:textSize="18sp" />
+
+      <TextView
+          android:id="@+id/textViewEnddate"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:hint="@string/mm_dd_yyyy"
+          android:background="?attr/editTextBackground"
+          android:inputType="date"
+          android:clickable="true"
+          android:focusable="true"
+          android:editable="false"/>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Event Starting Timing"
+          android:textSize="18sp" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/hh_mm"
+            android:inputType="time"
+            android:textSize="18sp"/>
+
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Event Ending Timing"
+          android:textSize="18sp" />
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textViewEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hh_mm"
+            android:textSize="18sp"
+            android:inputType="time"
+            android:clickable="true"
+            android:focusable="true"
+            android:editable="false"/>
+
+      </LinearLayout>
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Contact Number"
+          android:textSize="18sp" />
+
+      <EditText
+          android:id="@+id/editTxtContact"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="phone" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Email Id"
+          android:textSize="18sp" />
+
+      <EditText
+          android:id="@+id/editTxtEmailId"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="textEmailAddress" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Event Venue"
+          android:textSize="18sp" />
+
+      <EditText
+          android:id="@+id/txt_venu"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="textPostalAddress" />
+
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="10dp"
+          android:text="Description"
+          android:textSize="18sp" />
+
+      <EditText
+          android:id="@+id/txt_desc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:ems="10"
+          android:inputType="textMultiLine"
+          android:lines="5"
+          android:scrollbars="vertical" />
+      <!--      <EditText-->
+      <!--        android:id="@+id/txt_desc"-->
+      <!--        android:layout_width="match_parent"-->
+      <!--        android:layout_height="300dp"-->
+      <!--        android:ems="10"-->
+      <!--        android:background="@drawable/text_background"-->
+      <!--        android:scrollbars="vertical"-->
+      <!--        android:inputType="textMultiLine" />-->
+
+      <Button
+          android:id="@+id/bt_new_event"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_marginBottom="40dp"
+          android:background="?android:attr/colorMultiSelectHighlight"
+          android:text="Create Event"
+          android:visibility="visible" />
+    </LinearLayout>
+  </ScrollView>
+</LinearLayout>

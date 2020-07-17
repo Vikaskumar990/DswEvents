@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:fadeScrollbars="true"
+    android:isScrollContainer="true"
+    tools:context=".UpdateUserActivity"
+    android:paddingBottom="5dp">
+
+
+    <TextView
+      android:id="@+id/tvMemberCount"
+      android:layout_width="210dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="1dp"
+      android:layout_marginTop="10dp"
+      android:background="#ffffff"
+      android:padding="15dp"
+      android:text="50"
+      android:textAlignment="center"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/textView16"
+      app:layout_constraintTop_toBottomOf="@+id/etEventDes" />
+
+
+
+    <EditText
+      android:id="@+id/etEventDes"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#ffffff"
+      android:padding="10dp"
+      android:text="this is to inform all the students of class that SPADE under the aegis of Division of student welfare is organising Campus princess - Road to Miss India. You all are requested to show your valuable presence in S.S.D.M.A. .  LET'S together make this event a big success . Gather as much as crowd. All of us are counting on you guys.. Get all your friends and their friends on the show today. "
+      android:textAlignment="viewStart"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+    <TextView
+      android:id="@+id/textView15"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:background="#ffffff"
+      android:padding="10dp"
+      android:text="DESCRIPTION"
+      android:textAlignment="viewStart"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      android:textStyle="bold"
+      app:layout_constraintTop_toBottomOf="@+id/etEventEmail"
+      tools:layout_editor_absoluteX="31dp" />
+
+    <EditText
+      android:id="@+id/etEventEmail"
+      android:layout_width="210dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="1dp"
+      android:layout_marginBottom="20dp"
+      android:background="#ffffff"
+      android:inputType="textEmailAddress"
+      android:paddingBottom="15dp"
+      android:text="shiv4913@gmail.com"
+      android:textAlignment="center"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/textView15"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/etEventContact"
+      app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+      android:id="@+id/etEventContact"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_marginEnd="1dp"
+      android:layout_marginBottom="10dp"
+      android:background="#ffffff"
+      android:inputType="phone"
+      android:paddingBottom="15dp"
+      android:text="7202052104"
+      android:textAlignment="center"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/textView15"
+      app:layout_constraintEnd_toStartOf="@+id/etEventEmail"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+      android:id="@+id/textView11"
+      android:layout_width="210dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="1dp"
+      android:layout_marginTop="10dp"
+      android:background="#ffffff"
+      android:padding="15dp"
+      android:text="Email Id"
+      android:textAlignment="center"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@+id/textView10"
+      app:layout_constraintTop_toBottomOf="@+id/etEventName" />
+
+    <TextView
+      android:id="@+id/textView10"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="1dp"
+      android:background="#ffffff"
+      android:padding="15dp"
+      android:text="Contact No"
+      android:textAlignment="center"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/etEventContact"
+      app:layout_constraintEnd_toStartOf="@+id/textView11"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etEventName" />
+
+    <TextView
+      android:id="@+id/textView16"
+      android:layout_width="200dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginEnd="1dp"
+      android:background="#ffffff"
+      android:padding="15dp"
+      android:text="Total Members"
+      android:textAlignment="center"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintEnd_toStartOf="@+id/textView11"
+      app:layout_constraintHorizontal_bias="1.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/etEventDes" />
+
+
+
+    <EditText
+      android:id="@+id/etEventName"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="10dp"
+      android:background="#FFFFFF"
+      android:inputType="text"
+      android:padding="15dp"
+      android:text="The UnderGround Poets"
+      android:textAlignment="viewStart"
+      android:textColor="#0570C9"
+      android:textSize="14sp"
+      app:layout_constraintBottom_toTopOf="@+id/textView11"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="parent" />
+    <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/btnProfileUpdate"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      app:layout_constraintEnd_toStartOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tvMemberCount"
+      android:textStyle="bold"
+      android:textColor="@android:color/white"
+      android:text="@string/update"
+      android:background="@drawable/button_rounded"/>
+
+
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

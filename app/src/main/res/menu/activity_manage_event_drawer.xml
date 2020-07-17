@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+          android:id="@+id/nav_home"
+          android:icon="@drawable/ic_add_black_24dp"
+          android:title="@string/dsw_event" />
+        <item
+            android:id="@+id/nav_create_event"
+            android:icon="@drawable/ic_add_black_24dp"
+            android:title="@string/menu_create_event" />
+        <item
+            android:id="@+id/nav_conducted_event"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="@string/menu_conducted_event" />
+        <item
+            android:id="@+id/nav_organizer_details"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="@string/menu_organizer_details" />
+        <item
+            android:id="@+id/nav_tools"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/menu_tools" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_help" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/menu_share" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+    <item
+        android:id="@+id/media_route_menu_item"
+        android:title="Cast"
+        app:actionProviderClass="androidx.mediarouter.app.MediaRouteActionProvider"
+        tools:icon="@drawable/mr_button_light" />
+
+</menu>

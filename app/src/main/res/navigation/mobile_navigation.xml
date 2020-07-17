@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sodhotuition.dswevents.ui.home.HomeFragment"
+        android:label="@string/dsw_event"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_conducted_event"
+        android:name="com.sodhotuition.dswevents.ui.home.HomeFragment"
+        android:label="@string/menu_conducted_event"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_organizer_details"
+        android:name="com.sodhotuition.dswevents.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_organizer_details"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.sodhotuition.dswevents.ui.tools.ToolsFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="com.sodhotuition.dswevents.ui.share.ShareFragment"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.sodhotuition.dswevents.ui.share.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+    <fragment
+        android:id="@+id/nav_create_new"
+        android:name="com.sodhotuition.dswevents.CreateEventForm"
+        android:label="@string/new_event"
+        tools:layout="@layout/activity_create_event" />
+
+    <fragment
+        android:id="@+id/nav_event_detail"
+        android:name="com.sodhotuition.dswevents.EventDetailsFragment"
+        android:label="@string/event_detail"
+        tools:layout="@layout/fragment_share" />
+
+</navigation>
